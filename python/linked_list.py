@@ -5,8 +5,7 @@ import queue
 class LinkList:
   # write your __init__ method here that should store a 'head' value which the first Node in the LinkedList and a 'length' value which is the total number of Nodes in the LinkedList
   def __init__(self):
-    node_names = 'bcdefghijklmnopqrstuvwxyz'
-    self.node_names = node_names.reversed()
+    self.nodes = []
     self.previous_node = None
     self.name = 0
     self.head = None
@@ -16,12 +15,8 @@ class LinkList:
 
   def add(self, data):
     # How to change previous node's pointer when a new node is added?
-    new_node = Node(data)
-    
-    # if self.head == None:
-    #   self.head = new_node
-    # elif self.previous_node != None:
-    #   self.previous_node = new_node
+    self.nodes.append(Node(data))
+
     self.length += 1
     pass
 
@@ -32,6 +27,7 @@ class LinkList:
 
   def get(self, element_to_get):
     # write you code to GET and return an element from the Linked List
+    
     pass
 
 # ----- Node ------

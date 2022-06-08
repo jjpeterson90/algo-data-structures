@@ -6,17 +6,17 @@ class Stack:
 
   def push(self, data):
     # write your code to add data following LIFO (last in first out) and return the Stack
+    pass
     self.stack.append(data)
     self.total += 1
     return self.stack
 
   def pop(self):
-    # write your code to removes the data following LIFO and return the Stack
+    # write your code to removes the data following LIFO and return the Stack   
     self.stack.pop()
     self.total -= 1
     return self.stack
     
-
   def size(self):
     # write your code that returns the size of the Stack
     return self.total
